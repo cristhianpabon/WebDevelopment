@@ -160,6 +160,42 @@ footer {
   font-weight: 600;
 }
 
+.grow {
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+.grow:hover {
+  transform: scale(1.1);
+}
+
+.moveUp {
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+.moveUp:hover {
+  transform: scaleX(1.05);
+  background-color: #d00000;
+  border-color: #d00000;
+}
+
+.bolder {
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+.bolder:hover {
+  font-weight: 600;
+  transform: scaleX(1.05);
+}
+
+
+.grow {
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+.grow:hover {
+  transform: scale(1.1);
+}
+
 /*************************/
 /*****  FIN GENERAL  ****/
 /*************************/
