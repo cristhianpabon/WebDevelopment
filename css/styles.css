@@ -54,6 +54,9 @@ nav > ul > li {
   margin: 10px;
   font-weight: 600;
 }
+.menubar {
+  display: none;
+}
 
 .blackBanner {
   max-width: 1500px;
@@ -102,6 +105,10 @@ nav > ul > li {
   color: #ffffff;
   display: inline-block;
   padding: 10px 20px;
+}
+
+.filterMenuIcon {
+  display: none;
 }
 
 footer {
@@ -186,7 +193,6 @@ footer {
   font-weight: 600;
   transform: scaleX(1.05);
 }
-
 
 .grow {
   cursor: pointer;
@@ -338,6 +344,7 @@ footer {
 .storeList {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   margin-bottom: 50px;
 }
 
@@ -635,3 +642,237 @@ footer {
 /*************************/
 /*****   FIN CONTACTO ****/
 /*************************/
+
+@media (max-width: 970px) {
+  /* body {
+    background-color: #d00000;
+  } */
+  /*************************/
+  /*****   GENERAL  ****/
+  /*************************/
+
+  .blackBannerContent > h2 {
+    font-size: 2rem;
+  }
+
+  .blackBannerContent > p {
+    font-size: 1.5rem;
+  }
+
+  nav {
+    padding: 10px 20px;
+  }
+
+  nav > h1 {
+    font-size: 1.5rem;
+  }
+
+  nav ul {
+    display: none;
+  }
+
+  .menubar {
+    display: block;
+  }
+
+  .filterMenuIcon {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+  }
+
+  .filterMenuIcon li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 10px;
+  }
+
+  .bannerContent > h2 {
+    font-size: 2rem;
+  }
+
+  .bannerContent > p {
+    font-size: 1.5rem;
+  }
+
+  .footerContent {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .footerRight {
+    margin-top: 50px;
+    text-align: center;
+  }
+
+  /*************************/
+  /*****  FIN GENERAL  ****/
+  /*************************/
+
+  /*************************/
+  /*****    INICIO  ****/
+  /*************************/
+
+  .works > h2 {
+    font-size: 2rem;
+  }
+
+  .worksList {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .worksList > li {
+    width: 100%;
+    margin-bottom: 50px;
+  }
+
+  .activitiesContent {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .activitiesLeft {
+    margin-bottom: 50px;
+  }
+
+  .activitiesLeft > h2 {
+    font-size: 2rem;
+  }
+
+  .activitiesRight {
+    text-align: center;
+  }
+
+  .activitiesRight > p:first-child {
+    font-size: 2rem;
+  }
+
+  .activitiesRight > p:nth-child(2) {
+    font-size: 1rem;
+  }
+
+  .contactContent {
+    flex-direction: column;
+  }
+
+  .contactLeft {
+    margin-bottom: 50px;
+  }
+
+  .contactLeft > h2 {
+    font-size: 2rem;
+  }
+
+  .contactRight > a {
+    font-size: 1rem;
+  }
+
+  .storeContent > h2 {
+    font-size: 2rem;
+    text-align: center;
+  }
+
+  .storeList {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .storeList > li {
+    width: 100%;
+    margin-bottom: 50px;
+  }
+  /*************************/
+  /*****  FIN INICIO  ****/
+  /*************************/
+
+  /*************************/
+  /*****   COLECCION   ****/
+  /*************************/
+
+  .colectionePageContent {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .colectionePageFilter {
+    display: none;
+  }
+
+  .colectionePageProductList {
+    flex-direction: column;
+  }
+
+  .colectionePageProductList li {
+    width: 100%;
+    margin-bottom: 50px;
+  }
+
+  /*************************/
+  /*****  FIN COLECCION  ****/
+  /*************************/
+
+  /*************************/
+  /*****    ACTIVIDADES    ****/
+  /*************************/
+
+  .activitiesPageContent {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .activitiesPageFilter {
+    display: none;
+  }
+
+  .activitiesPageProductList {
+    flex-direction: column;
+  }
+
+  .activitiesPageProductList li {
+    width: 100%;
+    margin-bottom: 50px;
+  }
+
+  .activitiesPageProductList li h3 {
+    font-size: 2rem;
+  }
+
+  .activitiesPageProductList li p {
+    font-size: 1rem;
+    padding-left: 50px;
+  }
+
+  .activitiesPageProductList li a {
+    margin-top: 20px;
+  }
+
+  /*************************/
+  /*****  FIN ACTIVIDADES  ****/
+  /*************************/
+  
+  /*************************/
+  /*****    TIENDA    ****/
+  /*************************/
+  
+  .storePageContent {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .storePageFilter {
+    display: none;
+  }
+
+  .storePageProductList {
+    flex-direction: column;
+  }
+
+  .storePageProductList li {
+    width: 100%;
+    margin-bottom: 50px;
+  }
+}
