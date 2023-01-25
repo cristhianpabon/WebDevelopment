@@ -43,17 +43,18 @@ nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
+
+  ul {
+    display: flex;
+    justify-content: space-between;
+
+    li {
+      margin: 10px;
+      font-weight: 600;
+    }
+  }
 }
 
-nav > ul {
-  display: flex;
-  justify-content: space-between;
-}
-
-nav > ul > li {
-  margin: 10px;
-  font-weight: 600;
-}
 .menubar {
   display: none;
 }
@@ -65,15 +66,17 @@ nav > ul > li {
   color: #ffffff;
 }
 
-.blackBannerContent > h2 {
-  font-size: 3.75rem;
-  font-weight: 600;
-  margin-bottom: 10px;
-}
+.blackBannerContent {
+  h2 {
+    font-size: 3.75rem;
+    font-weight: 600;
+    margin-bottom: 10px;
+  }
 
-.blackBannerContent > p {
-  font-size: 2.5rem;
-  font-weight: 100;
+  p {
+    font-size: 2.5rem;
+    font-weight: 100;
+  }
 }
 
 .banner {
@@ -86,25 +89,27 @@ nav > ul > li {
   align-items: center;
 }
 
-.bannerContent > h2 {
-  font-size: 3.75rem;
-  font-weight: 600;
-}
+.bannerContent {
+  h2 {
+    font-size: 3.75rem;
+    font-weight: 600;
+  }
 
-.bannerContent > p {
-  font-size: 2.5rem;
-  font-weight: 200;
-  margin-bottom: 20px;
-}
+  p {
+    font-size: 2.5rem;
+    font-weight: 200;
+    margin-bottom: 20px;
+  }
 
-.bannerContent > a {
-  font-size: 1.25rem;
-  font-weight: 600;
-  border-radius: 50px;
-  background-color: #000000;
-  color: #ffffff;
-  display: inline-block;
-  padding: 10px 20px;
+  a {
+    font-size: 1.25rem;
+    font-weight: 600;
+    border-radius: 50px;
+    background-color: #000000;
+    color: #ffffff;
+    display: inline-block;
+    padding: 10px 20px;
+  }
 }
 
 .filterMenuIcon {
@@ -126,10 +131,12 @@ footer {
   align-items: center;
 }
 
-.footerLeft > h2 {
-  font-size: 2.5rem;
-  font-weight: 600;
-  margin-bottom: 10px;
+.footerLeft {
+  h2 {
+    font-size: 2.5rem;
+    font-weight: 600;
+    margin-bottom: 10px;
+  }
 }
 
 .socialLinks {
@@ -138,29 +145,31 @@ footer {
   align-items: center;
 }
 
-.footerRight > p:first-child {
-  font-size: 1.25rem;
-  font-weight: 600;
-}
+.footerRight {
+  p:first-child {
+    font-size: 1.25rem;
+    font-weight: 600;
+  }
 
-.footerRight > p:nth-child(2) {
-  font-size: 1.25rem;
-  font-weight: 200;
-}
+  p:nth-child(2) {
+    font-size: 1.25rem;
+    font-weight: 200;
+  }
 
-.footerRight > p:nth-child(3) {
-  font-size: 1.25rem;
-  font-weight: 200;
+  p:nth-child(3) {
+    font-size: 1.25rem;
+    font-weight: 200;
+  }
 }
 
 .pageCounter {
   display: flex;
   justify-content: center;
   align-items: center;
-}
 
-.pageCounter li {
-  margin: 0 10px;
+  li {
+    margin: 0 10px;
+  }
 }
 
 .pageCounterBold {
@@ -170,36 +179,31 @@ footer {
 .grow {
   cursor: pointer;
   transition: all 0.2s ease-in-out;
-}
-.grow:hover {
-  transform: scale(1.1);
+
+  &:hover {
+    transform: scale(1.1);
+  }
 }
 
 .moveUp {
   cursor: pointer;
   transition: all 0.2s ease-in-out;
-}
-.moveUp:hover {
-  transform: scaleX(1.05);
-  background-color: #d00000;
-  border-color: #d00000;
+
+  &:hover {
+    transform: scaleX(1.05);
+    background-color: #d00000;
+    border-color: #d00000;
+  }
 }
 
 .bolder {
   cursor: pointer;
   transition: all 0.2s ease-in-out;
-}
-.bolder:hover {
-  font-weight: 600;
-  transform: scaleX(1.05);
-}
 
-.grow {
-  cursor: pointer;
-  transition: all 0.2s ease-in-out;
-}
-.grow:hover {
-  transform: scale(1.1);
+  &:hover {
+    font-weight: 600;
+    transform: scaleX(1.05);
+  }
 }
 
 /*************************/
@@ -212,13 +216,13 @@ footer {
 
 .works {
   padding: 50px 0px;
-}
 
-.works > h2 {
-  font-size: 2.5rem;
-  font-weight: 600;
-  text-align: center;
-  margin-bottom: 50px;
+  h2 {
+    font-size: 2.5rem;
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 50px;
+  }
 }
 
 .worksList {
@@ -228,24 +232,24 @@ footer {
   display: flex;
   justify-content: space-between;
   margin-bottom: 50px;
-}
 
-.worksList > li {
-  width: 30%;
+  li {
+    width: 30%;
+  }
 }
 
 .worksButton {
   text-align: center;
-}
 
-.worksButton > a {
-  font-size: 1.25rem;
-  font-weight: 600;
-  border-radius: 50px;
-  background-color: #000000;
-  color: #ffffff;
-  display: inline-block;
-  padding: 10px 50px;
+  a {
+    font-size: 1.25rem;
+    font-weight: 600;
+    border-radius: 50px;
+    background-color: #000000;
+    color: #ffffff;
+    display: inline-block;
+    padding: 10px 50px;
+  }
 }
 
 .activities {
@@ -263,31 +267,40 @@ footer {
   align-items: center;
 }
 
-.activitiesLeft > h2 {
-  font-size: 3.75rem;
-  font-weight: 600;
-  margin-bottom: 10px;
+.activitiesLeft {
+  h2 {
+    font-size: 3.75rem;
+    font-weight: 600;
+    margin-bottom: 10px;
+  }
+
+  a {
+    font-size: 1.25rem;
+    font-weight: 600;
+    border-radius: 50px;
+    border: 2px solid #ffffff;
+    color: #ffffff;
+    display: inline-block;
+    padding: 10px 50px;
+  }
 }
 
-.activitiesLeft > a {
-  font-size: 1.25rem;
-  font-weight: 600;
-  border-radius: 50px;
-  border: 2px solid #ffffff;
-  color: #ffffff;
-  display: inline-block;
-  padding: 10px 50px;
-}
+.activitiesRight {
+  p:first-child {
+    font-size: 2.5rem;
+    font-weight: 600;
+    margin-bottom: 20px;
+  }
 
-.activitiesRight > p:first-child {
-  font-size: 2.5rem;
-  font-weight: 600;
-  margin-bottom: 20px;
-}
+  p:nth-child(2) {
+    font-size: 1.25rem;
+    font-weight: 600;
+  }
 
-.activitiesRight > p:nth-child(2) {
-  font-size: 1.25rem;
-  font-weight: 600;
+  p {
+    font-size: 1.25rem;
+    font-weight: 200;
+  }
 }
 
 .contact {
@@ -304,25 +317,24 @@ footer {
   align-items: center;
 }
 
-.contactLeft > h2 {
-  font-size: 3.75rem;
-  font-weight: 600;
-  margin-bottom: 20px;
+.contactLeft {
+  h2 {
+    font-size: 3.75rem;
+    font-weight: 600;
+    margin-bottom: 20px;
+  }
 }
 
-.activitiesRight > p {
-  font-size: 1.25rem;
-  font-weight: 200;
-}
-
-.contactRight > a {
-  font-size: 1.25rem;
-  font-weight: 600;
-  border-radius: 50px;
-  background-color: #000000;
-  color: #ffffff;
-  display: inline-block;
-  padding: 10px 50px;
+.contactRight {
+  a {
+    font-size: 1.25rem;
+    font-weight: 600;
+    border-radius: 50px;
+    background-color: #000000;
+    color: #ffffff;
+    display: inline-block;
+    padding: 10px 50px;
+  }
 }
 
 .store {
@@ -333,12 +345,12 @@ footer {
   width: 80%;
   max-width: 1200px;
   margin: auto;
-}
 
-.storeContent > h2 {
-  font-size: 2.5rem;
-  font-weight: 600;
-  margin-bottom: 50px;
+  h2 {
+    font-size: 2.5rem;
+    font-weight: 600;
+    margin-bottom: 50px;
+  }
 }
 
 .storeList {
@@ -346,40 +358,40 @@ footer {
   justify-content: space-between;
   align-items: center;
   margin-bottom: 50px;
-}
 
-.storeList > li {
-  width: 24%;
-}
+  li {
+    width: 24%;
 
-.storeList > li > div {
-  text-align: center;
-  margin-bottom: 10px;
-}
+    div {
+      text-align: center;
+      margin-bottom: 10px;
+    }
 
-.storeList > li > p {
-  font-size: 2.5rem;
-  font-weight: 600;
-  margin-bottom: 10px;
-}
+    p {
+      font-size: 2.5rem;
+      font-weight: 600;
+      margin-bottom: 10px;
+    }
 
-.storeList > li > h3 {
-  font-size: 1.25rem;
-  font-weight: 100;
+    h3 {
+      font-size: 1.25rem;
+      font-weight: 100;
+    }
+  }
 }
 
 .storeButton {
   text-align: center;
-}
 
-.storeButton a {
-  font-size: 1.25rem;
-  font-weight: 600;
-  border-radius: 50px;
-  background-color: #000000;
-  color: #ffffff;
-  display: inline-block;
-  padding: 10px 50px;
+  a {
+    font-size: 1.25rem;
+    font-weight: 600;
+    border-radius: 50px;
+    background-color: #000000;
+    color: #ffffff;
+    display: inline-block;
+    padding: 10px 50px;
+  }
 }
 
 /*************************/
@@ -404,18 +416,17 @@ footer {
 
 .colectionePageFilter {
   width: 21%;
-}
+  li {
+    font-size: 1.25rem;
+    font-weight: 200;
+    padding: 0 50px;
+    margin-bottom: 10px;
+  }
 
-.colectionePageFilter li {
-  font-size: 1.25rem;
-  font-weight: 200;
-  padding: 0 50px;
-  margin-bottom: 10px;
-}
-
-.colectionePageFilter li:first-child {
-  font-weight: 600;
-  margin-bottom: 20px;
+  li:first-child {
+    font-weight: 600;
+    margin-bottom: 20px;
+  }
 }
 
 .colectionePageProductList {
@@ -423,30 +434,29 @@ footer {
   justify-content: space-between;
   align-items: flex-start;
   flex-wrap: wrap;
-}
-
-.colectionePageProductList li {
-  width: 29%;
-  margin-bottom: 50px;
-}
-
-.colectionePageProductList li div img {
-  width: 100%;
-  margin-bottom: 10px;
-}
-
-.colectionePageProductList li h3 {
-  font-size: 1.25rem;
-  font-weight: 100;
-  margin-bottom: 10px;
-}
-
-.colectionePageProductList li p {
-  font-size: 1.25rem;
-}
-
-.colectionePageProductList {
   width: 79%;
+
+  li {
+    width: 29%;
+    margin-bottom: 50px;
+
+    div {
+      img {
+        width: 100%;
+        margin-bottom: 10px;
+      }
+    }
+
+    h3 {
+      font-size: 1.25rem;
+      font-weight: 100;
+      margin-bottom: 10px;
+    }
+
+    p {
+      font-size: 1.25rem;
+    }
+  }
 }
 
 /*************************/
@@ -471,18 +481,18 @@ footer {
 
 .activitiesPageFilter {
   width: 21%;
-}
 
-.activitiesPageFilter li {
-  font-size: 1.25rem;
-  font-weight: 200;
-  padding: 0 50px;
-  margin-bottom: 10px;
-}
+  li {
+    font-size: 1.25rem;
+    font-weight: 200;
+    padding: 0 50px;
+    margin-bottom: 10px;
+  }
 
-.activitiesPageFilter li:first-child {
-  font-weight: 600;
-  margin-bottom: 20px;
+  li:first-child {
+    font-weight: 600;
+    margin-bottom: 20px;
+  }
 }
 
 .activitiesPageProductList {
@@ -490,45 +500,42 @@ footer {
   justify-content: space-between;
   align-items: flex-start;
   flex-wrap: wrap;
-}
-
-.activitiesPageProductList li {
-  border-top: solid 10px #000000;
-  width: 40%;
-  padding-top: 10px;
-  margin-bottom: 50px;
-}
-
-.activitiesPageProductList li h3 {
-  font-size: 3.75rem;
-  font-weight: 100;
-  margin-top: 10px;
-  margin-bottom: 30px;
-  padding-left: 50px;
-  width: 90%;
-}
-
-.activitiesPageProductList li p {
-  font-size: 1.25rem;
-  padding-left: 50px;
-}
-
-.activitiesPageProductList li a {
-  font-size: 1.25rem;
-  font-weight: 600;
-  border-radius: 50px;
-  text-align: center;
-  color: #ffffff;
-  background-color: #000000;
-  margin: 0 auto;
-  margin-top: 100px;
-  display: block;
-  padding: 10px 50px;
-  width: 90%;
-}
-
-.activitiesPageProductList {
   width: 79%;
+
+  li {
+    border-top: solid 10px #000000;
+    width: 40%;
+    padding-top: 10px;
+    margin-bottom: 50px;
+
+    h3 {
+      font-size: 3.75rem;
+      font-weight: 100;
+      margin-top: 10px;
+      margin-bottom: 30px;
+      padding-left: 50px;
+      width: 90%;
+    }
+
+    p {
+      font-size: 1.25rem;
+      padding-left: 50px;
+    }
+
+    a {
+      font-size: 1.25rem;
+      font-weight: 600;
+      border-radius: 50px;
+      text-align: center;
+      color: #ffffff;
+      background-color: #000000;
+      margin: 0 auto;
+      margin-top: 100px;
+      display: block;
+      padding: 10px 50px;
+      width: 90%;
+    }
+  }
 }
 
 /*************************/
@@ -553,18 +560,18 @@ footer {
 
 .storePageFilter {
   width: 21%;
-}
 
-.storePageFilter li {
-  font-size: 1.25rem;
-  font-weight: 200;
-  padding: 0 50px;
-  margin-bottom: 10px;
-}
+  li {
+    font-size: 1.25rem;
+    font-weight: 200;
+    padding: 0 50px;
+    margin-bottom: 10px;
+  }
 
-.storePageFilter li:first-child {
-  font-weight: 600;
-  margin-bottom: 20px;
+  li:first-child {
+    font-weight: 600;
+    margin-bottom: 20px;
+  }
 }
 
 .storePageProductList {
@@ -572,31 +579,28 @@ footer {
   justify-content: space-between;
   align-items: flex-start;
   flex-wrap: wrap;
-}
-
-.storePageProductList li {
-  width: 24%;
-  margin-bottom: 50px;
-}
-
-.storePageProductList li div img {
-  width: 100%;
-  margin-bottom: 10px;
-}
-
-.storePageProductList li p {
-  font-size: 2.5rem;
-  font-weight: 600;
-  margin-bottom: 10px;
-}
-
-.storePageProductList li h3 {
-  font-size: 1.25rem;
-  font-weight: 100;
-}
-
-.storePageProductList {
   width: 79%;
+
+  li {
+    width: 24%;
+    margin-bottom: 50px;
+
+    div img {
+      width: 100%;
+      margin-bottom: 10px;
+    }
+
+    p {
+      font-size: 2.5rem;
+      font-weight: 600;
+      margin-bottom: 10px;
+    }
+
+    h3 {
+      font-size: 1.25rem;
+      font-weight: 100;
+    }
+  }
 }
 
 /*************************/
@@ -622,17 +626,17 @@ footer {
 
 .contactList {
   margin-bottom: 50px;
-}
 
-.contactList li {
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-  margin-bottom: 20px;
-}
+  li {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-bottom: 20px;
 
-.contactList li div {
-  margin-right: 20px;
+    div {
+      margin-right: 20px;
+    }
+  }
 }
 
 .contactMap img {
@@ -645,30 +649,32 @@ footer {
 
 @media (max-width: 970px) {
   /* body {
-    background-color: #d00000;
-  } */
+      background-color: #d00000;
+    } */
   /*************************/
   /*****   GENERAL  ****/
   /*************************/
 
-  .blackBannerContent > h2 {
-    font-size: 2rem;
-  }
+  .blackBannerContent {
+    h2 {
+      font-size: 2rem;
+    }
 
-  .blackBannerContent > p {
-    font-size: 1.5rem;
+    p {
+      font-size: 1.5rem;
+    }
   }
 
   nav {
     padding: 10px 20px;
-  }
 
-  nav > h1 {
-    font-size: 1.5rem;
-  }
+    h1 {
+      font-size: 1.5rem;
+    }
 
-  nav ul {
-    display: none;
+    ul {
+      display: none;
+    }
   }
 
   .menubar {
@@ -680,21 +686,23 @@ footer {
     justify-content: space-between;
     align-items: center;
     margin-bottom: 30px;
+
+    li {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-left: 10px;
+    }
   }
 
-  .filterMenuIcon li {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-left: 10px;
-  }
+  .bannerContent {
+    h2 {
+      font-size: 2rem;
+    }
 
-  .bannerContent > h2 {
-    font-size: 2rem;
-  }
-
-  .bannerContent > p {
-    font-size: 1.5rem;
+    p {
+      font-size: 1.5rem;
+    }
   }
 
   .footerContent {
@@ -715,18 +723,20 @@ footer {
   /*****    INICIO  ****/
   /*************************/
 
-  .works > h2 {
-    font-size: 2rem;
+  .works {
+    h2 {
+      font-size: 2rem;
+    }
   }
 
   .worksList {
     flex-direction: column;
     text-align: center;
-  }
 
-  .worksList > li {
-    width: 100%;
-    margin-bottom: 50px;
+    li {
+      width: 100%;
+      margin-bottom: 50px;
+    }
   }
 
   .activitiesContent {
@@ -737,22 +747,22 @@ footer {
 
   .activitiesLeft {
     margin-bottom: 50px;
-  }
 
-  .activitiesLeft > h2 {
-    font-size: 2rem;
+    h2 {
+      font-size: 2rem;
+    }
   }
 
   .activitiesRight {
     text-align: center;
-  }
 
-  .activitiesRight > p:first-child {
-    font-size: 2rem;
-  }
+    p:first-child {
+      font-size: 2rem;
+    }
 
-  .activitiesRight > p:nth-child(2) {
-    font-size: 1rem;
+    p:nth-child(2) {
+      font-size: 1rem;
+    }
   }
 
   .contactContent {
@@ -761,29 +771,33 @@ footer {
 
   .contactLeft {
     margin-bottom: 50px;
+
+    h2 {
+      font-size: 2rem;
+    }
   }
 
-  .contactLeft > h2 {
-    font-size: 2rem;
+  .contactRight {
+    a {
+      font-size: 1rem;
+    }
   }
 
-  .contactRight > a {
-    font-size: 1rem;
-  }
-
-  .storeContent > h2 {
-    font-size: 2rem;
-    text-align: center;
+  .storeContent {
+    h2 {
+      font-size: 2rem;
+      text-align: center;
+    }
   }
 
   .storeList {
     flex-direction: column;
     text-align: center;
-  }
 
-  .storeList > li {
-    width: 100%;
-    margin-bottom: 50px;
+    li {
+      width: 100%;
+      margin-bottom: 50px;
+    }
   }
   /*************************/
   /*****  FIN INICIO  ****/
@@ -804,11 +818,11 @@ footer {
 
   .colectionePageProductList {
     flex-direction: column;
-  }
 
-  .colectionePageProductList li {
-    width: 100%;
-    margin-bottom: 50px;
+    li {
+      width: 100%;
+      margin-bottom: 50px;
+    }
   }
 
   /*************************/
@@ -830,34 +844,34 @@ footer {
 
   .activitiesPageProductList {
     flex-direction: column;
-  }
 
-  .activitiesPageProductList li {
-    width: 100%;
-    margin-bottom: 50px;
-  }
+    li {
+      width: 100%;
+      margin-bottom: 50px;
 
-  .activitiesPageProductList li h3 {
-    font-size: 2rem;
-  }
+      h3 {
+        font-size: 2rem;
+      }
 
-  .activitiesPageProductList li p {
-    font-size: 1rem;
-    padding-left: 50px;
-  }
+      p {
+        font-size: 1rem;
+        padding-left: 50px;
+      }
 
-  .activitiesPageProductList li a {
-    margin-top: 20px;
+      a {
+        margin-top: 20px;
+      }
+    }
   }
 
   /*************************/
   /*****  FIN ACTIVIDADES  ****/
   /*************************/
-  
+
   /*************************/
   /*****    TIENDA    ****/
   /*************************/
-  
+
   .storePageContent {
     flex-direction: column;
     align-items: center;
@@ -869,10 +883,10 @@ footer {
 
   .storePageProductList {
     flex-direction: column;
-  }
 
-  .storePageProductList li {
-    width: 100%;
-    margin-bottom: 50px;
+    li {
+      width: 100%;
+      margin-bottom: 50px;
+    }
   }
 }
