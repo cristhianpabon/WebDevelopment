@@ -47,6 +47,58 @@ nav {
 .menubar {
   display: none; }
 
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%; }
+  .sidebar p {
+    font-size: 1.7rem; }
+  .sidebar ul li {
+    padding: 10px 0;
+    padding-left: 10px; }
+
+.sidebarOpen {
+  display: block; }
+
+.sidebarHidden {
+  display: none; }
+
+.sidebarHeader {
+  background-color: #ffffff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  margin-bottom: 20px; }
+
+.sidebarShadowLayer {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: #000000;
+  opacity: 0.8; }
+
+.sidebarContainer {
+  position: absolute;
+  top: 0;
+  left: 0;
+  max-width: 350px;
+  width: 80%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: #f5f5f5; }
+
+.sidebarFooter {
+  padding: 0 20px;
+  padding-top: 20px;
+  background-color: #000000; }
+
 .blackBanner {
   max-width: 1500px;
   padding: 50px 100px;

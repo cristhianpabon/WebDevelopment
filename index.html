@@ -29,7 +29,7 @@
           <li class="grow"><a href="pages/store.html">TIENDA</a></li>
           <li class="grow"><a href="pages/contact.html">CONTACTO</a></li>
         </ul>
-        <div class="menubar" for="">
+        <div id="menuIcon" class="menubar" for="">
           <img src="img/menu.png" alt="navbar menu icon" />
         </div>
       </nav>
@@ -37,10 +37,55 @@
         <div class="bannerContent">
           <h2>COLECCION 2023</h2>
           <p>Visita nuestra <em>galeria</em></p>
-          <a class="moveUp">Ver Coleccion</a>
+          <a href="pages/colection.html"  class="moveUp">Ver Coleccion</a>
         </div>
       </div>
     </header>
+    <aside id="sidebarMenu" class="sidebar">
+      <div class="sidebarShadowLayer"></div>
+      <div class="sidebarContainer">
+        <div>
+          <div class="sidebarHeader">
+            <p>
+              <span class="brandRed">C</span>rispy
+              <span class="brandGrey">G</span>allery
+            </p>
+            <img id="closeIcon" src="img/closeMenu.png" alt="boton cerrar menu sidebar" />
+          </div>
+          <ul class="sidebarMenuButtons">
+            <li><a href="index.html">INICIO</a></li>
+            <li><a href="pages/colection.html">COLECCION</a></li>
+            <li><a href="pages/activities.html">ACTIVIDADES</a></li>
+            <li><a href="pages/store.html">TIENDA</a></li>
+            <li><a href="pages/contact.html">CONTACTO</a></li>
+          </ul>
+        </div>
+        <div class="sidebarFooter">
+          <ul class="socialLinks">
+            <li>
+              <a href="https://www.facebook.com/"
+                ><img src="img/Fb.png" alt="Redes sociales Link Facebook"
+              /></a>
+            </li>
+            <li>
+              <a href="https://twitter.com/"
+                ><img src="img/Tw.png" alt="Redes sociales Link Twitter"
+              /></a>
+            </li>
+            <li>
+              <a href="https://www.youtube.com/"
+                ><img src="img/Yt.png" alt="Redes sociales Link Youtube"
+              /></a>
+            </li>
+            <li>
+              <a href="https://www.instagram.com/">
+                <img src="img/Ig.png" alt="Redes sociales Link Instagram"
+              /></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </aside>
     <main>
       <div class="works">
         <h2>Ultimas Creaciones</h2>
@@ -68,14 +113,14 @@
           </li>
         </ul>
         <div class="worksButton">
-          <a class="moveUp">Ver Coleccion</a>
+          <a href="pages/colection.html" class="moveUp">Ver Coleccion</a>
         </div>
       </div>
       <div class="activities">
         <div class="activitiesContent">
           <div class="activitiesLeft">
             <h2>ACTIVIDADES</h2>
-            <a class="moveUp">Mas información</a>
+            <a href="pages/activities.html" class="moveUp">Mas información</a>
           </div>
           <div class="activitiesRight">
             <p>ABC de la Pintura</p>
@@ -90,7 +135,7 @@
             <p>Buscas algo en particular?</p>
           </div>
           <div class="contactRight">
-            <a class="moveUp">REALIZAR CONSULTA</a>
+            <a href="pages/contact.html"  class="moveUp">REALIZAR CONSULTA</a>
           </div>
         </div>
       </div>
@@ -148,17 +193,23 @@
           </h2>
           <ul class="socialLinks">
             <li>
-              <a><img src="img/Fb.png" alt="Redes sociales Link Facebook" /></a>
+              <a href="https://www.facebook.com/"
+                ><img src="../img/Fb.png" alt="Redes sociales Link Facebook"
+              /></a>
             </li>
             <li>
-              <a><img src="img/Tw.png" alt="Redes sociales Link Twitter" /></a>
+              <a href="https://twitter.com/"
+                ><img src="../img/Tw.png" alt="Redes sociales Link Twitter"
+              /></a>
             </li>
             <li>
-              <a><img src="img/Yt.png" alt="Redes sociales Link Youtube" /></a>
+              <a href="https://www.youtube.com/"
+                ><img src="../img/Yt.png" alt="Redes sociales Link Youtube"
+              /></a>
             </li>
             <li>
-              <a>
-                <img src="img/Ig.png" alt="Redes sociales Link Instagram"
+              <a href="https://www.instagram.com/">
+                <img src="../img/Ig.png" alt="Redes sociales Link Instagram"
               /></a>
             </li>
           </ul>
@@ -170,5 +221,6 @@
         </div>
       </div>
     </footer>
+    <script src="js/index.js"></script>
   </body>
 </html>
