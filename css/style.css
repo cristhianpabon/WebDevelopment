@@ -59,6 +59,9 @@ nav {
     padding: 10px 0;
     padding-left: 10px; }
 
+.fakeSCSS {
+  background-color: #ffffff; }
+
 .sidebarOpen {
   display: block; }
 
